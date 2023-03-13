@@ -41,7 +41,6 @@ public class Task2 {
         // To calculate the number of strings without 'e' character in the given 2D array
         for(int i = 0; i < array.length; i++){
             for(int j = 0; j < array[i].length; j++){
-                String s4 = array[i][j];
                 if(array[i][j].contains("е")){
                 } else {
                     count2++;
