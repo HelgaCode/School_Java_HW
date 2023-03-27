@@ -12,10 +12,11 @@ public class Manager extends Employee{
         return numbersEmployee;
     }
 
-    @Override
-    public double getSalary(int days) {
+    public double getSalaryManager(int days) {
         double salary = getSalaryInDay() * days;
-        return salary + salary * (getNumbersEmployee()/100);
+        if(getNumbersEmployee() > 0) {
+            return (salary + salary * ((getNumbersEmployee() / 100.0) * 3));
+        } else {return salary;}
     }
 
 }
