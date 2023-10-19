@@ -9,7 +9,7 @@ public class Employee extends Person {
     }
 
     public boolean isSameName(Employee employee){
-        return this.getName().equals(employee.getName());
+        return this.getName().equalsIgnoreCase(employee.getName());
     }
 
     public double getSelary() {

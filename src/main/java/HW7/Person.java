@@ -6,7 +6,7 @@ public class Person {
     private int age;
 
     public String getName(){
-        if(Male == "Male"){
+        if("male".equalsIgnoreCase(Male)){
             return "Mr." + Name;
         } else {
             return "Mrs." + Name;
